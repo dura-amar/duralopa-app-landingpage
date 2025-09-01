@@ -1,0 +1,32 @@
+[
+    {
+        "icon": "🔤",
+        "title": "Alphabets",
+        "description": "Learn the Dura alphabets with clear visuals and audio support."
+    },
+    {
+        "icon": "📖",
+        "title": "Dictionary",
+        "description": "Explore Dura-Nepali-English dictionary with search functionality."
+    },
+    {
+        "icon": "🗣️",
+        "title": "Sentences with Audio",
+        "description": "Practice common sentences with native audio recordings."
+    },
+    {
+        "icon": "📝",
+        "title": "Vocabulary",
+        "description": "Build vocabulary with categorized word lists and audio."
+    },
+    {
+        "icon": "⚡",
+        "title": "Verbs",
+        "description": "Master verb forms in Dura."
+    },
+    {
+        "icon": "🎧",
+        "title": "Audio Book",
+        "description": "Listen to stories in Dura language for better comprehension."
+    }
+]

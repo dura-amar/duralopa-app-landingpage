@@ -14,15 +14,21 @@
     "role": "Vocal",
     "image": "./images/contributors/sanjita.jpeg"
   },
+  
+  {
+    "name": "Raj Kumari Dura",
+    "role": "Advisor",
+    "image": "./images/contributors/rajkumari.JPG"
+  },
   {
     "name": "Muna Dura",
-    "role": "Content Writer",
+    "role": "Advisor",
     "image": "./images/contributors/muna.JPG"
   },
   {
     "name": "Dipesh Dura",
     "role": "Content Writer",
-    "image": "./images/contributors/dipesh.jpeg"
+    "image": "./images/contributors/dipesh.JPG"
   },
   {
     "name": "Prabina Dura",
