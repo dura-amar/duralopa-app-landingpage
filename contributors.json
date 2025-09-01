@@ -13,5 +13,25 @@
     "name": "Sanjita Dura",
     "role": "Vocal",
     "image": "./images/contributors/sanjita.jpeg"
+  },
+  {
+    "name": "Muna Dura",
+    "role": "Content Writer",
+    "image": "./images/contributors/muna.jpg"
+  },
+  {
+    "name": "Dipesh Dura",
+    "role": "Content Writer",
+    "image": "./images/contributors/dipesh.jpeg"
+  },
+  {
+    "name": "Prabina Dura",
+    "role": "Content Writer",
+    "image": "./images/contributors/prabina.jpg"
+  },
+  {
+    "name": "Bikesh Dura",
+    "role": "Content Writer",
+    "image": "./images/contributors/bikesh.jpg"
   }
 ]
