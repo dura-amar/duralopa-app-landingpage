@@ -15,40 +15,41 @@
     </div>
   </nav>
 
-  <!-- Hero Section -->
-  <section class="text-center py-20 bg-gradient-to-r from-blue-500 to-indigo-600 text-white">
-    <div class="max-w-6xl mx-auto grid md:grid-cols-2 items-center gap-8 px-4">
-      <!-- Text -->
-      <div>
-        <h2 class="text-4xl font-bold mb-4">Learn Dura Language Easily</h2>
-        <p class="text-lg mb-6">A simple and fun app to learn the Dura language with quizzes, lessons, and audio.</p>
-        <a href="#download" class="bg-white text-blue-600 font-semibold px-6 py-3 rounded-lg shadow hover:bg-gray-100">
-          Get Started
-        </a>
+ <!-- Hero Section -->
+<section class="text-center bg-gradient-to-r from-blue-500 to-indigo-600 text-white h-screen flex items-center">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-2 items-center gap-8 px-4 h-full">
+    <!-- Text -->
+    <div class="space-y-6">
+      <h2 class="text-4xl md:text-5xl font-bold">Learn Dura Language Easily</h2>
+      <p class="text-lg md:text-xl">A simple and fun app to learn the Dura language with quizzes, lessons, and audio.</p>
+      <a href="#download" class="bg-white text-blue-600 font-semibold px-6 py-3 rounded-lg shadow hover:bg-gray-100">
+        Get Started
+      </a>
+    </div>
+
+    <!-- Image -->
+    <div class="flex justify-center items-center h-full">
+      <div class="relative bg-black rounded-[2.5rem] p-2 shadow-2xl w-48 md:w-64 lg:w-80 max-h-[80%]">
+        <!-- Top notch -->
+        <div class="absolute top-0 left-1/2 transform -translate-x-1/2 w-20 h-4 bg-black rounded-b-2xl z-20"></div>
+        
+        <!-- Screen -->
+        <img src="./images/preview.jpg" 
+             alt="App Preview" 
+             class="rounded-[2rem] object-contain w-full h-full" />
+
+        <!-- Glass reflection -->
+        <div class="absolute inset-0 rounded-[2rem] pointer-events-none">
+          <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-tr from-white/30 to-transparent opacity-30 rounded-[2rem]"></div>
+        </div>
+
+        <!-- Bottom home bar -->
+        <div class="absolute bottom-2 left-1/2 transform -translate-x-1/2 w-20 h-1.5 bg-white/70 rounded-full z-20"></div>
       </div>
-     <!-- Image -->
-<div class="flex justify-center">
-  <div class="relative bg-black rounded-[2.5rem] p-2 shadow-2xl w-64 md:w-80 lg:w-96 overflow-hidden">
-    <!-- Top notch -->
-    <div class="absolute top-0 left-1/2 transform -translate-x-1/2 w-24 h-5 bg-black rounded-b-2xl z-20"></div>
-    
-    <!-- Screen (App Preview) -->
-    <img src="./images/preview.jpg" 
-         alt="App Preview" 
-         class="rounded-[2rem] object-contain w-full h-auto" />
-
-    <!-- Glass reflection overlay -->
-    <div class="absolute inset-0 rounded-[2rem] pointer-events-none">
-      <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-tr from-white/30 to-transparent opacity-30 rounded-[2rem]"></div>
     </div>
-
-    <!-- Bottom home bar -->
-    <div class="absolute bottom-2 left-1/2 transform -translate-x-1/2 w-20 h-1.5 bg-white/70 rounded-full z-20"></div>
   </div>
-</div>
+</section>
 
-    </div>
-  </section>
 
   <!-- Features -->
   <section class="max-w-6xl mx-auto py-16 px-4 grid md:grid-cols-3 gap-8">
