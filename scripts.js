@@ -55,3 +55,11 @@ carousel.addEventListener("touchend", (e) => {
   if (endX - startX > 50) prevSlide();
   else if (startX - endX > 50) nextSlide();
 });
+
+// Mobile menu toggle
+const menuButton = document.getElementById("mobile-menu-button");
+const mobileMenu = document.getElementById("mobile-menu");
+
+menuButton.addEventListener("click", () => {
+  mobileMenu.classList.toggle("hidden");
+});

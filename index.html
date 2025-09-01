@@ -9,51 +9,172 @@
     <link rel="stylesheet" href="./styles.css" />
     <style>
       @keyframes fadeSlideUp {
-        0% { opacity: 0; transform: translateY(20px); }
-        100% { opacity: 1; transform: translateY(0); }
+        0% {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
       }
-      .fade-slide-up { animation: fadeSlideUp 0.8s ease-out forwards; }
+      .fade-slide-up {
+        animation: fadeSlideUp 0.8s ease-out forwards;
+      }
     </style>
   </head>
   <body class="bg-gray-50 text-gray-900">
     <!-- Navbar -->
-    <nav class="bg-white shadow p-4 sticky top-0 z-30">
-      <div class="max-w-6xl mx-auto flex justify-between items-center">
-        <h1 class="text-xl font-bold">Dura Lopa App</h1>
-        <a href="#download" class="text-blue-600 hover:underline">Download</a>
+    <nav class="bg-white shadow sticky top-0 z-50">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="flex justify-between items-center h-16">
+          <!-- Logo / Brand -->
+          <a href="#" class="flex items-center space-x-2">
+            <img
+              src="./images/appicon.png"
+              alt="Dura Lopa Logo"
+              class="h-10 w-10 rounded-full"
+            />
+            <span class="text-2xl font-bold text-blue-600 hover:text-blue-700"
+              >Dura Lopa</span
+            >
+          </a>
+
+          <!-- Desktop Menu -->
+          <div class="hidden md:flex space-x-6">
+            <a
+              href="#features"
+              class="text-gray-700 hover:text-blue-600 transition"
+              >Features</a
+            >
+            <a
+              href="#download"
+              class="text-gray-700 hover:text-blue-600 transition"
+              >Download</a
+            >
+            <a
+              href="#contributors"
+              class="text-gray-700 hover:text-blue-600 transition"
+              >Contributors</a
+            >
+          </div>
+
+          <!-- Mobile Hamburger -->
+          <div class="md:hidden flex items-center">
+            <button id="mobile-menu-button" class="focus:outline-none">
+              <svg
+                class="w-6 h-6 text-gray-700"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md">
+        <a
+          href="#features"
+          class="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+          >Features</a
+        >
+        <a
+          href="#download"
+          class="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+          >Download</a
+        >
+        <a
+          href="#contributors"
+          class="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+          >Contributors</a
+        >
       </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="relative text-center bg-gradient-to-r from-blue-500 to-indigo-600 text-white pt-20 pb-32">
-      <div class="max-w-6xl mx-auto grid md:grid-cols-2 grid-cols-1 items-center gap-8 px-4">
+    <section
+      class="relative text-center bg-gradient-to-r from-blue-500 to-indigo-600 text-white pt-20 pb-32"
+    >
+      <div
+        class="max-w-6xl mx-auto grid md:grid-cols-2 grid-cols-1 items-center gap-8 px-4"
+      >
         <!-- Text -->
-        <div class="flex flex-col justify-center space-y-6 fade-slide-up" style="animation-delay: 0.2s;">
-          <h2 class="text-3xl md:text-5xl font-bold">Learn Dura Language Easily</h2>
+        <div
+          class="flex flex-col justify-center space-y-6 fade-slide-up"
+          style="animation-delay: 0.2s"
+        >
+          <h2 class="text-3xl md:text-5xl font-bold">
+            Learn Dura Language Easily
+          </h2>
           <p class="text-base md:text-lg">
-            A simple and fun app to learn the Dura language with quizzes, lessons, and audio.
+            A simple and fun app to learn the Dura language with quizzes,
+            lessons, and audio.
           </p>
 
           <!-- CTA buttons -->
-          <div class="flex flex-col sm:flex-row justify-center items-center gap-4 mt-4">
-            <a href="https://play.google.com/store/apps/details?id=org.durapetodss.duralopa" target="_blank">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play" class="h-12 sm:h-14"/>
+          <div
+            class="flex flex-col sm:flex-row justify-center items-center gap-4 mt-4"
+          >
+            <a
+              href="https://play.google.com/store/apps/details?id=org.durapetodss.duralopa"
+              target="_blank"
+            >
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+                alt="Get it on Google Play"
+                class="h-12 sm:h-14"
+              />
             </a>
             <a href="#" target="_blank">
-              <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" class="h-12 sm:h-14"/>
+              <img
+                src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+                alt="Download on the App Store"
+                class="h-12 sm:h-14"
+              />
             </a>
           </div>
         </div>
 
         <!-- Image Carousel -->
-        <div class="flex justify-center md:justify-end w-full max-w-md md:max-w-sm">
+        <div
+          class="flex justify-center md:justify-end w-full max-w-md md:max-w-sm"
+        >
           <div class="relative w-full overflow-hidden rounded-xl shadow-xl">
             <div id="carousel" class="flex transition-transform duration-500">
-              <img src="./images/preview/preview1.jpg" alt="App Screenshot 1" class="w-full flex-shrink-0 object-contain h-auto max-h-[32rem]" />
-              <img src="./images/preview/preview2.jpg" alt="App Screenshot 2" class="w-full flex-shrink-0 object-contain h-auto max-h-[32rem]" />
-              <img src="./images/preview/preview3.jpg" alt="App Screenshot 3" class="w-full flex-shrink-0 object-contain h-auto max-h-[32rem]" />
-              <img src="./images/preview/preview4.jpg" alt="App Screenshot 4" class="w-full flex-shrink-0 object-contain h-auto max-h-[32rem]" />
-              <img src="./images/preview/preview5.jpg" alt="App Screenshot 5" class="w-full flex-shrink-0 object-contain h-auto max-h-[32rem]" />
+              <img
+                src="./images/preview/preview1.jpg"
+                alt="App Screenshot 1"
+                class="w-full flex-shrink-0 object-contain h-auto max-h-[32rem]"
+              />
+              <img
+                src="./images/preview/preview2.jpg"
+                alt="App Screenshot 2"
+                class="w-full flex-shrink-0 object-contain h-auto max-h-[32rem]"
+              />
+              <img
+                src="./images/preview/preview3.jpg"
+                alt="App Screenshot 3"
+                class="w-full flex-shrink-0 object-contain h-auto max-h-[32rem]"
+              />
+              <img
+                src="./images/preview/preview4.jpg"
+                alt="App Screenshot 4"
+                class="w-full flex-shrink-0 object-contain h-auto max-h-[32rem]"
+              />
+              <img
+                src="./images/preview/preview5.jpg"
+                alt="App Screenshot 5"
+                class="w-full flex-shrink-0 object-contain h-auto max-h-[32rem]"
+              />
             </div>
           </div>
         </div>
@@ -61,7 +182,10 @@
     </section>
 
     <!-- Features Section -->
-    <section class="max-w-6xl mx-auto py-16 px-4 grid md:grid-cols-3 gap-8">
+    <section
+      id="features"
+      class="max-w-6xl mx-auto py-16 px-4 grid md:grid-cols-3 gap-8"
+    >
       <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
         <h3 class="text-xl font-semibold mb-2">📚 Lessons</h3>
         <p>Learn step by step with structured lessons and examples.</p>
@@ -82,11 +206,22 @@
       <p class="mb-6">Available soon on both Android and iOS!</p>
 
       <div class="flex justify-center gap-6 flex-wrap">
-        <a href="https://play.google.com/store/apps/details?id=org.durapetodss.duralopa" target="_blank">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play" class="h-14"/>
+        <a
+          href="https://play.google.com/store/apps/details?id=org.durapetodss.duralopa"
+          target="_blank"
+        >
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+            alt="Get it on Google Play"
+            class="h-14"
+          />
         </a>
         <a href="#" target="_blank">
-          <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" class="h-14"/>
+          <img
+            src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+            alt="Download on the App Store"
+            class="h-14"
+          />
         </a>
       </div>
     </section>
@@ -94,7 +229,10 @@
     <!-- Contributors Section -->
     <section id="contributors" class="max-w-6xl mx-auto py-16 px-4">
       <h3 class="text-2xl font-bold text-center mb-8">Contributors</h3>
-      <div id="contributors-list" class="grid md:grid-cols-3 gap-8 text-center"></div>
+      <div
+        id="contributors-list"
+        class="grid md:grid-cols-3 gap-8 text-center"
+      ></div>
     </section>
 
     <!-- Footer -->
