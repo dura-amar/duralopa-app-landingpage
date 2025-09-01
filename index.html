@@ -26,10 +26,27 @@
           Get Started
         </a>
       </div>
-      <!-- Image -->
-      <div class="flex justify-center">
-        <img src="./images/preview.jpg" alt="App Preview" class="rounded-xl shadow-lg" />
-      </div>
+     <!-- Image -->
+<div class="flex justify-center">
+  <div class="relative bg-black rounded-[2.5rem] p-2 shadow-2xl w-64 md:w-80 lg:w-96 overflow-hidden">
+    <!-- Top notch -->
+    <div class="absolute top-0 left-1/2 transform -translate-x-1/2 w-24 h-5 bg-black rounded-b-2xl z-20"></div>
+    
+    <!-- Screen (App Preview) -->
+    <img src="./images/preview.jpg" 
+         alt="App Preview" 
+         class="rounded-[2rem] object-contain w-full h-auto" />
+
+    <!-- Glass reflection overlay -->
+    <div class="absolute inset-0 rounded-[2rem] pointer-events-none">
+      <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-tr from-white/30 to-transparent opacity-30 rounded-[2rem]"></div>
+    </div>
+
+    <!-- Bottom home bar -->
+    <div class="absolute bottom-2 left-1/2 transform -translate-x-1/2 w-20 h-1.5 bg-white/70 rounded-full z-20"></div>
+  </div>
+</div>
+
     </div>
   </section>
 
@@ -100,3 +117,4 @@
   </footer>
 </body>
 </html>
+>
