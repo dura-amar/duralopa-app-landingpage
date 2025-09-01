@@ -1,121 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dura Lopa App</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-gray-50 text-gray-900">
-  <!-- Navbar -->
-  <nav class="bg-white shadow p-4">
-    <div class="max-w-6xl mx-auto flex justify-between items-center">
-      <h1 class="text-xl font-bold">Dura Lopa App</h1>
-      <a href="#download" class="text-blue-600 hover:underline">Download</a>
-    </div>
-  </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dura Lopa App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 
- <!-- Hero Section -->
-<section class="text-center bg-gradient-to-r from-blue-500 to-indigo-600 text-white h-screen flex items-center">
-  <div class="max-w-6xl mx-auto grid md:grid-cols-2 items-center gap-8 px-4 h-full">
-    <!-- Text -->
-    <div class="space-y-6">
-      <h2 class="text-4xl md:text-5xl font-bold">Learn Dura Language Easily</h2>
-      <p class="text-lg md:text-xl">A simple and fun app to learn the Dura language with quizzes, lessons, and audio.</p>
-      <a href="#download" class="bg-white text-blue-600 font-semibold px-6 py-3 rounded-lg shadow hover:bg-gray-100">
-        Get Started
-      </a>
-    </div>
+    <link rel="stylesheet" href="./styles.css" />
+    <style>
+      @keyframes fadeSlideUp {
+        0% { opacity: 0; transform: translateY(20px); }
+        100% { opacity: 1; transform: translateY(0); }
+      }
+      .fade-slide-up { animation: fadeSlideUp 0.8s ease-out forwards; }
+    </style>
+  </head>
+  <body class="bg-gray-50 text-gray-900">
+    <!-- Navbar -->
+    <nav class="bg-white shadow p-4 sticky top-0 z-30">
+      <div class="max-w-6xl mx-auto flex justify-between items-center">
+        <h1 class="text-xl font-bold">Dura Lopa App</h1>
+        <a href="#download" class="text-blue-600 hover:underline">Download</a>
+      </div>
+    </nav>
 
-    <!-- Image -->
-    <div class="flex justify-center items-center h-full">
-      <div class="relative bg-black rounded-[2.5rem] p-2 shadow-2xl w-48 md:w-64 lg:w-80 max-h-[80%]">
-        <!-- Top notch -->
-        <div class="absolute top-0 left-1/2 transform -translate-x-1/2 w-20 h-4 bg-black rounded-b-2xl z-20"></div>
-        
-        <!-- Screen -->
-        <img src="./images/preview.jpg" 
-             alt="App Preview" 
-             class="rounded-[2rem] object-contain w-full h-full" />
+    <!-- Hero Section -->
+    <section class="relative text-center bg-gradient-to-r from-blue-500 to-indigo-600 text-white pt-20 pb-32">
+      <div class="max-w-6xl mx-auto grid md:grid-cols-2 grid-cols-1 items-center gap-8 px-4">
+        <!-- Text -->
+        <div class="flex flex-col justify-center space-y-6 fade-slide-up" style="animation-delay: 0.2s;">
+          <h2 class="text-3xl md:text-5xl font-bold">Learn Dura Language Easily</h2>
+          <p class="text-base md:text-lg">
+            A simple and fun app to learn the Dura language with quizzes, lessons, and audio.
+          </p>
 
-        <!-- Glass reflection -->
-        <div class="absolute inset-0 rounded-[2rem] pointer-events-none">
-          <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-tr from-white/30 to-transparent opacity-30 rounded-[2rem]"></div>
+          <!-- CTA buttons -->
+          <div class="flex flex-col sm:flex-row justify-center items-center gap-4 mt-4">
+            <a href="https://play.google.com/store/apps/details?id=org.durapetodss.duralopa" target="_blank">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play" class="h-12 sm:h-14"/>
+            </a>
+            <a href="#" target="_blank">
+              <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" class="h-12 sm:h-14"/>
+            </a>
+          </div>
         </div>
 
-        <!-- Bottom home bar -->
-        <div class="absolute bottom-2 left-1/2 transform -translate-x-1/2 w-20 h-1.5 bg-white/70 rounded-full z-20"></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-  <!-- Features -->
-  <section class="max-w-6xl mx-auto py-16 px-4 grid md:grid-cols-3 gap-8">
-    <div class="p-6 bg-white rounded-xl shadow">
-      <h3 class="text-xl font-semibold mb-2">📚 Lessons</h3>
-      <p>Learn step by step with structured lessons and examples.</p>
-    </div>
-    <div class="p-6 bg-white rounded-xl shadow">
-      <h3 class="text-xl font-semibold mb-2">🎧 Audio</h3>
-      <p>Listen to native pronunciations for words and sentences.</p>
-    </div>
-    <div class="p-6 bg-white rounded-xl shadow">
-      <h3 class="text-xl font-semibold mb-2">📝 Quizzes</h3>
-      <p>Test yourself and track progress with fun quizzes.</p>
-    </div>
-  </section>
-
-  <!-- Download Section -->
-  <section id="download" class="text-center py-16 bg-gray-100">
-    <h3 class="text-2xl font-bold mb-6">Download the App</h3>
-    <p class="mb-6">Available soon on both Android and iOS!</p>
-    
-    <div class="flex justify-center gap-6 flex-wrap">
-      <!-- Google Play Badge -->
-      <a href="https://play.google.com/store/apps/details?id=org.durapetodss.duralopa" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" 
-             alt="Get it on Google Play" class="h-14">
-      </a>
-      <!-- App Store Badge -->
-      <a href="#" target="_blank">
-        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" 
-             alt="Download on the App Store" class="h-14">
-      </a>
-    </div>
-  </section>
-
-  <!-- Contributors Section -->
-<section id="contributors" class="max-w-6xl mx-auto py-16 px-4">
-  <h3 class="text-2xl font-bold text-center mb-8">Contributors</h3>
-  <div id="contributors-list" class="grid md:grid-cols-3 gap-8 text-center"></div>
-</section>
-
-<script>
-  // Load contributors dynamically
-  fetch("contributors.json")
-    .then(res => res.json())
-    .then(data => {
-      const container = document.getElementById("contributors-list");
-      data.forEach(contributor => {
-        container.innerHTML += `
-          <div class="p-6 bg-white rounded-xl shadow">
-            <img src="${contributor.image}" alt="${contributor.name}" class="mx-auto rounded-full mb-4 w-28 h-28 object-cover">
-            <h4 class="text-lg font-semibold">${contributor.name}</h4>
-            <p class="text-gray-600">${contributor.role}</p>
+        <!-- Image Carousel -->
+        <div class="flex justify-center md:justify-end w-full max-w-md md:max-w-sm">
+          <div class="relative w-full overflow-hidden rounded-xl shadow-xl">
+            <div id="carousel" class="flex transition-transform duration-500">
+              <img src="./images/preview/preview1.jpg" alt="App Screenshot 1" class="w-full flex-shrink-0 object-contain h-auto max-h-[32rem]" />
+              <img src="./images/preview/preview2.jpg" alt="App Screenshot 2" class="w-full flex-shrink-0 object-contain h-auto max-h-[32rem]" />
+              <img src="./images/preview/preview3.jpg" alt="App Screenshot 3" class="w-full flex-shrink-0 object-contain h-auto max-h-[32rem]" />
+              <img src="./images/preview/preview4.jpg" alt="App Screenshot 4" class="w-full flex-shrink-0 object-contain h-auto max-h-[32rem]" />
+              <img src="./images/preview/preview5.jpg" alt="App Screenshot 5" class="w-full flex-shrink-0 object-contain h-auto max-h-[32rem]" />
+            </div>
           </div>
-        `;
-      });
-    })
-    .catch(err => console.error("Error loading contributors:", err));
-</script>
+        </div>
+      </div>
+    </section>
 
+    <!-- Features Section -->
+    <section class="max-w-6xl mx-auto py-16 px-4 grid md:grid-cols-3 gap-8">
+      <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold mb-2">📚 Lessons</h3>
+        <p>Learn step by step with structured lessons and examples.</p>
+      </div>
+      <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold mb-2">🎧 Audio</h3>
+        <p>Listen to native pronunciations for words and sentences.</p>
+      </div>
+      <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold mb-2">📝 Quizzes</h3>
+        <p>Test yourself and track progress with fun quizzes.</p>
+      </div>
+    </section>
 
-  <!-- Footer -->
-  <footer class="text-center py-6 text-gray-600">
-    © 2025 Dura Lopa App. All rights reserved.
-  </footer>
-</body>
+    <!-- Download Section -->
+    <section id="download" class="text-center py-16 bg-gray-100">
+      <h3 class="text-2xl font-bold mb-6">Download the App</h3>
+      <p class="mb-6">Available soon on both Android and iOS!</p>
+
+      <div class="flex justify-center gap-6 flex-wrap">
+        <a href="https://play.google.com/store/apps/details?id=org.durapetodss.duralopa" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play" class="h-14"/>
+        </a>
+        <a href="#" target="_blank">
+          <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" class="h-14"/>
+        </a>
+      </div>
+    </section>
+
+    <!-- Contributors Section -->
+    <section id="contributors" class="max-w-6xl mx-auto py-16 px-4">
+      <h3 class="text-2xl font-bold text-center mb-8">Contributors</h3>
+      <div id="contributors-list" class="grid md:grid-cols-3 gap-8 text-center"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-6 text-gray-600">
+      © 2025 Dura Lopa App. All rights reserved.
+    </footer>
+
+    <!-- Link external JS -->
+    <script src="./scripts.js"></script>
+  </body>
 </html>
->

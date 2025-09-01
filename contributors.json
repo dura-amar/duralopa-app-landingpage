@@ -2,16 +2,16 @@
   {
     "name": "Amar Dura",
     "role": "Designer",
-    "image": "./images/amar.JPG"
+    "image": "./images/contributors/amar.JPG"
   },
   {
     "name": "Sudarshan Dura",
     "role": "Developer",
-    "image": "./images/sudarshan.JPG"
+    "image": "./images/contributors/sudarshan.JPG"
   },
   {
     "name": "Sanjita Dura",
     "role": "Vocal",
-    "image": "./images/sanjita.jpeg"
+    "image": "./images/contributors/sanjita.jpeg"
   }
 ]
